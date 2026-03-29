@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <!-- ═══ PRIMARY META ═══ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>TikTok Video Editing Tips &amp; Tutorials | CutLab Blog</title>
+  <meta name="description" content="Master TikTok video editing with expert tutorials on cuts, color grading, transitions, audio sync, and trending effects. CutLab — the #1 resource for TikTok editors."/>
+  <meta name="keywords" content="TikTok video editing, TikTok editing tips, video editor tutorials, color grading TikTok, TikTok transitions, CapCut tutorial, DaVinci Resolve, Premiere Pro, short form video editing, TikTok effects, video editing for beginners, TikTok creator tips, dark line 81 video editor"/>
+  <meta name="author" content="CutLab Editorial Team"/>
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+  <meta name="theme-color" content="#000000"/>
+  <link rel="canonical" href="https://cutlab.io/blog"/>
+
+  <!-- ═══ OPEN GRAPH ═══ -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="CutLab"/>
+  <meta property="og:title" content="TikTok Video Editing Tips &amp; Tutorials | CutLab Blog"/>
+  <meta property="og:description" content="Master TikTok video editing with expert tutorials on cuts, color grading, transitions, audio sync, and trending effects."/>
+  <meta property="og:url" content="https://cutlab.io/blog"/>
+  <meta property="og:image" content="https://cutlab.io/og-image.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:locale" content="en_US"/>
+
+  <!-- ═══ TWITTER / X CARD ═══ -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@cutlabio"/>
+  <meta name="twitter:title" content="TikTok Video Editing Tips &amp; Tutorials | CutLab"/>
+  <meta name="twitter:description" content="Master TikTok video editing — cuts, grading, transitions, audio sync and trending effects. Expert tutorials for creators."/>
+  <meta name="twitter:image" content="https://cutlab.io/og-image.jpg"/>
+
+  <!-- ═══ TIKTOK SEO ═══ -->
+  <meta name="tiktok:creator" content="@cutlabio"/>
+
+  <!-- ═══ STRUCTURED DATA — BLOG ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "CutLab — TikTok Video Editing Blog",
+    "description": "Expert TikTok video editing tutorials, tips, and techniques for creators and professionals.",
+    "url": "https://cutlab.io/blog",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CutLab",
+      "logo": {"@type": "ImageObject", "url": "https://cutlab.io/logo.png"}
+    },
+    "inLanguage": "en-US",
+    "about": [
+      {"@type": "Thing", "name": "TikTok Video Editing"},
+      {"@type": "Thing", "name": "Short Form Video"},
+      {"@type": "Thing", "name": "Video Post Production"},
+      {"@type": "Thing", "name": "Color Grading"},
+      {"@type": "Thing", "name": "Motion Graphics"}
+    ],
+    "blogPost": [
+      {"@type": "BlogPosting","headline": "The Grammar of Cuts: How Every Edit Tells a Story","datePublished": "2025-06-12","author": {"@type": "Person","name": "Maya Okafor"},"keywords": "video editing cuts, J-cut, L-cut, match cut, TikTok editing"},
+      {"@type": "BlogPosting","headline": "Color Theory for TikTok: Building a Viral Look from Scratch","datePublished": "2025-05-28","author": {"@type": "Person","name": "Devon Price"},"keywords": "color grading TikTok, LUT, color theory video editing"},
+      {"@type": "BlogPosting","headline": "TikTok Sound Design: Making Your Edits Hit Harder","datePublished": "2025-05-10","author": {"@type": "Person","name": "Sana Ito"},"keywords": "TikTok audio editing, sound design, music sync TikTok"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem","position": 1,"name": "Home","item": "https://cutlab.io"},
+      {"@type": "ListItem","position": 2,"name": "Blog","item": "https://cutlab.io/blog"}
+    ]
+  }
+  </script>
+
+  <!-- ═══ FONTS ═══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --bg:      #000000;
+      --bg2:     #080808;
+      --surface: #0f0f0f;
+      --border:  #1a1a1a;
+      --border2: #252525;
+      --tk-red:  #fe2c55;
+      --tk-cyan: #25f4ee;
+      --tk-pink: #ff0050;
+      --text:    #f0f0f0;
+      --muted:   #545454;
+      --muted2:  #303030;
+      --glow-r:  0 0 24px rgba(254,44,85,0.45);
+      --glow-c:  0 0 24px rgba(37,244,238,0.35);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      overflow-x: hidden;
+      cursor: none;
+    }
+
+    /* scanline */
+    body::after {
+      content: '';
+      position: fixed; inset: 0;
+      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.07) 2px, rgba(0,0,0,0.07) 4px);
+      pointer-events: none;
+      z-index: 9990;
+    }
+
+    /* cursor */
+    #cur { width: 9px; height: 9px; background: var(--tk-red); border-radius: 50%; position: fixed; pointer-events: none; z-index: 99999; transform: translate(-50%,-50%); transition: transform .15s, background .2s; box-shadow: var(--glow-r); }
+    #ring { width: 32px; height: 32px; border: 1px solid rgba(254,44,85,.45); border-radius: 50%; position: fixed; pointer-events: none; z-index: 99998; transform: translate(-50%,-50%); transition: opacity .3s; }
+
+    /* TikTok stripe */
+    .stripe { height: 3px; background: linear-gradient(90deg, var(--tk-red), var(--tk-cyan), var(--tk-red)); background-size: 200%; animation: flow 2.5s linear infinite; }
+    @keyframes flow { to { background-position: 200% 0; } }
+
+    /* ─── HEADER ─── */
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 58px; padding: 0 clamp(1rem,4vw,4rem);
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0;
+      background: rgba(0,0,0,.93);
+      backdrop-filter: blur(14px);
+      z-index: 1000;
+    }
+
+    .logo {
+      font-family: 'Orbitron', monospace; font-weight: 900;
+      font-size: 1.2rem; letter-spacing: .14em;
+      text-decoration: none; cursor: pointer;
+      position: relative;
+    }
+    .logo-cut { color: #fff; }
+    .logo-lab { color: var(--tk-red); text-shadow: var(--glow-r); }
+    /* chromatic ghost */
+    .logo::before {
+      content: 'CUT';
+      position: absolute; left: -2px; top: 2px;
+      font-family: 'Orbitron', monospace; font-weight: 900; font-size: 1.2rem; letter-spacing: .14em;
+      color: var(--tk-cyan); opacity: .25; pointer-events: none;
+    }
+
+    nav { display: flex; gap: 1.8rem; align-items: center; }
+    nav a {
+      font-family: 'Space Mono', monospace; font-size: .62rem;
+      letter-spacing: .14em; text-transform: uppercase;
+      color: var(--muted); text-decoration: none; cursor: pointer;
+      transition: color .2s; position: relative;
+    }
+    nav a::after { content: ''; position: absolute; bottom: -4px; left: 0; right: 0; height: 1px; background: var(--tk-red); transform: scaleX(0); transition: transform .25s; }
+    nav a:hover, nav a.active { color: #fff; }
+    nav a:hover::after, nav a.active::after { transform: scaleX(1); }
+
+    .badge { font-family: 'Space Mono',monospace; font-size: .5rem; background: var(--tk-red); color: #fff; padding: .15rem .4rem; margin-left: .35rem; animation: blink 2s infinite; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.55} }
+
+    /* ─── HERO ─── */
+    .hero {
+      position: relative; overflow: hidden;
+      padding: clamp(3.5rem,9vw,7rem) clamp(1rem,4vw,4rem) clamp(2rem,5vw,4rem);
+      border-bottom: 1px solid var(--border);
+    }
+    /* diagonal wash */
+    .hero::before {
+      content: ''; position: absolute; top: -30%; right: -8%; width: 52%; height: 160%;
+      background: linear-gradient(135deg, rgba(254,44,85,.04), rgba(37,244,238,.025));
+      clip-path: polygon(20% 0%,100% 0%,80% 100%,0% 100%);
+      pointer-events: none;
+    }
+    /* ghost "81" */
+    .hero::after {
+      content: '81';
+      position: absolute; right: clamp(1rem,5vw,5rem); top: 50%; transform: translateY(-50%);
+      font-family: 'Orbitron',monospace; font-weight: 900;
+      font-size: clamp(9rem,26vw,20rem); line-height: 1;
+      color: transparent; -webkit-text-stroke: 1px rgba(254,44,85,.07);
+      pointer-events: none; user-select: none;
+    }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: .6rem;
+      font-family: 'Space Mono',monospace; font-size: .6rem;
+      letter-spacing: .16em; text-transform: uppercase; color: var(--tk-cyan);
+      margin-bottom: 1.4rem; opacity: 0; animation: up .6s .1s ease forwards;
+    }
+    .dot { width: 6px; height: 6px; background: var(--tk-red); border-radius: 50%; box-shadow: var(--glow-r); animation: blink 1.4s infinite; }
+
+    h1.hero-h1 {
+      font-family: 'Orbitron',monospace; font-weight: 900;
+      font-size: clamp(2.4rem,8vw,5.8rem); line-height: 1; letter-spacing: -.01em;
+      color: #fff; max-width: 700px; opacity: 0; animation: up .6s .2s ease forwards;
+    }
+    .red-line {
+      display: block; color: var(--tk-red);
+      text-shadow: 2px 2px 0 var(--tk-cyan), var(--glow-r);
+      position: relative;
+    }
+    .red-line::before { content: attr(data-t); position: absolute; left: -3px; top: 2px; color: var(--tk-cyan); opacity: .28; pointer-events: none; }
+    .red-line::after  { content: attr(data-t); position: absolute; left: 3px; top: -2px; color: var(--tk-pink); opacity: .18; pointer-events: none; }
+
+    .hero-sub { margin-top: 1.4rem; font-size: .88rem; color: var(--muted); max-width: 440px; line-height: 1.78; opacity: 0; animation: up .6s .3s ease forwards; }
+
+    .stats { display: flex; gap: 2.5rem; margin-top: 2.4rem; flex-wrap: wrap; opacity: 0; animation: up .6s .42s ease forwards; }
+    .stat-n { font-family: 'Orbitron',monospace; font-size: 1.5rem; font-weight: 700; color: #fff; }
+    .stat-n span { color: var(--tk-red); }
+    .stat-l { font-family: 'Space Mono',monospace; font-size: .57rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-top: .15rem; }
+
+    @keyframes up { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
+
+    /* ─── PAGE TOGGLE ─── */
+    #page-list    { display: block; }
+    #page-article { display: none; }
+
+    /* ─── BLOG SECTION ─── */
+    .blog-sec { padding: clamp(2rem,5vw,4rem) clamp(1rem,4vw,4rem); }
+
+    .sec-head { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.8rem; }
+    .sec-tag { font-family: 'Space Mono',monospace; font-size: .58rem; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+    .sec-line { flex: 1; height: 1px; background: linear-gradient(90deg, var(--border2), transparent); }
+
+    /* featured */
+    .featured {
+      display: grid; grid-template-columns: 1.1fr .9fr;
+      border: 1px solid var(--border); cursor: pointer;
+      transition: border-color .3s; position: relative; overflow: hidden;
+    }
+    .featured::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg,transparent,rgba(254,44,85,.04)); opacity: 0; transition: opacity .3s; pointer-events: none; }
+    .featured:hover { border-color: var(--tk-red); }
+    .featured:hover::before { opacity: 1; }
+
+    .feat-thumb { min-height: 260px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+    .feat-inner { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 5.5rem; transition: transform .55s cubic-bezier(.25,.46,.45,.94); }
+    .featured:hover .feat-inner { transform: scale(1.08); }
+    /* phone frame overlay */
+    .feat-thumb::after { content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 72px; height: 126px; border: 2px solid rgba(254,44,85,.18); border-radius: 8px; pointer-events: none; }
+
+    .feat-info { padding: 2.3rem; display: flex; flex-direction: column; justify-content: space-between; border-left: 1px solid var(--border); }
+
+    .pcat { font-family: 'Space Mono',monospace; font-size: .58rem; letter-spacing: .14em; text-transform: uppercase; }
+    .pcat.r { color: var(--tk-red); }
+    .pcat.c { color: var(--tk-cyan); }
+    .pcat.g { color: var(--muted); }
+
+    .feat-title { font-family: 'Orbitron',monospace; font-weight: 700; font-size: clamp(1.2rem,2.4vw,1.95rem); line-height: 1.15; color: #fff; margin: .9rem 0 .7rem; transition: color .2s; }
+    .featured:hover .feat-title { color: var(--tk-red); }
+
+    .feat-ex { font-size: .8rem; color: var(--muted); line-height: 1.74; flex: 1; }
+    .feat-meta { margin-top: 1.4rem; font-family: 'Space Mono',monospace; font-size: .57rem; letter-spacing: .08em; color: var(--muted); display: flex; flex-wrap: wrap; gap: .9rem; }
+    .cta { margin-top: 1.1rem; display: inline-flex; align-items: center; gap: .45rem; font-family: 'Space Mono',monospace; font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; color: var(--tk-cyan); }
+    .arr { display: inline-block; transition: transform .2s; }
+    .featured:hover .arr { transform: translateX(5px); }
+
+    /* posts grid */
+    .grid {
+      display: grid; grid-template-columns: repeat(auto-fill,minmax(min(100%,295px),1fr));
+      gap: 2px; background: var(--border); border: 1px solid var(--border);
+    }
+
+    .card {
+      background: var(--bg2); padding: 1.55rem 1.7rem; cursor: pointer;
+      transition: background .2s; position: relative; overflow: hidden;
+    }
+    /* corner notch */
+    .card::after { content: ''; position: absolute; top: 0; right: 0; width: 0; height: 0; border-style: solid; border-width: 0 16px 16px 0; border-color: transparent var(--border) transparent transparent; transition: border-color .2s; }
+    .card:hover::after { border-color: transparent var(--tk-red) transparent transparent; }
+    /* left bar */
+    .card::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: var(--tk-red); box-shadow: var(--glow-r); transform: scaleY(0); transition: transform .28s cubic-bezier(.25,.46,.45,.94); transform-origin: bottom; }
+    .card:hover { background: rgba(254,44,85,.03); }
+    .card:hover::before { transform: scaleY(1); }
+
+    .c-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: .85rem; }
+    .c-num { font-family: 'Space Mono',monospace; font-size: .53rem; color: var(--muted2); letter-spacing: .08em; }
+    .c-emoji { font-size: 1.05rem; }
+    .c-title { font-family: 'Orbitron',monospace; font-weight: 700; font-size: .87rem; line-height: 1.3; color: var(--text); margin-bottom: .6rem; letter-spacing: .01em; transition: color .2s; }
+    .card:hover .c-title { color: var(--tk-red); }
+    .c-desc { font-size: .73rem; color: var(--muted); line-height: 1.66; margin-bottom: .95rem; }
+    .c-foot { display: flex; align-items: center; justify-content: space-between; }
+
+    .pill { font-family: 'Space Mono',monospace; font-size: .53rem; letter-spacing: .1em; text-transform: uppercase; padding: .18rem .52rem; border: 1px solid; }
+    .pill.r { border-color: rgba(254,44,85,.35); color: var(--tk-red); }
+    .pill.c { border-color: rgba(37,244,238,.35); color: var(--tk-cyan); }
+    .pill.g { border-color: var(--border2); color: var(--muted); }
+
+    .c-arr { font-size: .68rem; color: var(--muted2); transition: color .2s, transform .2s; }
+    .card:hover .c-arr { color: var(--tk-red); transform: translateX(4px); }
+
+    /* ─── ARTICLE ─── */
+    .art-wrap { max-width: 820px; }
+    .art-top { padding: clamp(2.5rem,7vw,5.5rem) clamp(1rem,4vw,4rem) 2rem; border-bottom: 1px solid var(--border); }
+
+    .back { display: inline-flex; align-items: center; gap: .5rem; font-family: 'Space Mono',monospace; font-size: .6rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); cursor: pointer; margin-bottom: 2.2rem; transition: color .2s; border: none; background: none; padding: 0; }
+    .back:hover { color: var(--tk-red); }
+
+    .art-cat { font-family: 'Space Mono',monospace; font-size: .6rem; letter-spacing: .16em; text-transform: uppercase; color: var(--tk-cyan); margin-bottom: .9rem; }
+    .art-h1 { font-family: 'Orbitron',monospace; font-weight: 900; font-size: clamp(1.7rem,4.8vw,3.6rem); line-height: 1.05; letter-spacing: .01em; color: #fff; margin-bottom: 1.4rem; }
+    .art-meta { display: flex; gap: 1.4rem; flex-wrap: wrap; font-family: 'Space Mono',monospace; font-size: .58rem; letter-spacing: .08em; color: var(--muted); }
+
+    .art-body { padding: 2.5rem clamp(1rem,4vw,4rem); }
+    .art-thumb { width: 100%; aspect-ratio: 16/6.5; display: flex; align-items: center; justify-content: center; font-size: 6.5rem; border: 1px solid var(--border); margin-bottom: 2.3rem; position: relative; overflow: hidden; }
+    .art-thumb::before { content: ''; position: absolute; right: 10%; top: 50%; transform: translateY(-50%); width: 56px; height: 98px; border: 2px solid rgba(254,44,85,.14); border-radius: 8px; }
+
+    .art-body h2 { font-family: 'Orbitron',monospace; font-size: 1.1rem; font-weight: 700; color: #fff; margin: 2.4rem 0 .85rem; letter-spacing: .02em; display: flex; align-items: center; gap: .55rem; }
+    .art-body h2::before { content: '//'; color: var(--tk-red); font-family: 'Space Mono',monospace; font-size: .82rem; }
+    .art-body p { font-size: .9rem; line-height: 1.88; color: #8e8e8e; margin-bottom: 1.25rem; }
+    .art-body ul { list-style: none; margin: .9rem 0 1.4rem; }
+    .art-body ul li { font-size: .85rem; color: #8e8e8e; line-height: 1.7; padding-left: 1.5rem; position: relative; margin-bottom: .5rem; }
+    .art-body ul li::before { content: '▸'; position: absolute; left: 0; color: var(--tk-red); font-size: .66rem; }
+    .callout { border-left: 3px solid var(--tk-red); padding: .95rem 1.3rem; background: rgba(254,44,85,.05); margin: 1.7rem 0; font-size: .85rem; color: var(--text); line-height: 1.7; box-shadow: inset 0 0 0 1px rgba(254,44,85,.08); }
+    code { font-family: 'Space Mono',monospace; font-size: .76rem; background: rgba(37,244,238,.07); padding: .15em .4em; color: var(--tk-cyan); border: 1px solid rgba(37,244,238,.14); }
+
+    /* ─── FOOTER ─── */
+    footer { border-top: 1px solid var(--border); padding: 1.8rem clamp(1rem,4vw,4rem); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .f-logo { font-family: 'Orbitron',monospace; font-weight: 900; font-size: .95rem; letter-spacing: .1em; color: var(--muted); }
+    .f-logo span { color: var(--tk-red); }
+    footer p { font-family: 'Space Mono',monospace; font-size: .55rem; color: var(--muted); letter-spacing: .08em; }
+    .f-tags { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .ftag { font-family: 'Space Mono',monospace; font-size: .52rem; letter-spacing: .08em; color: var(--muted2); padding: .18rem .48rem; border: 1px solid var(--border); transition: color .2s, border-color .2s; cursor: pointer; }
+    .ftag:hover { color: var(--tk-red); border-color: rgba(254,44,85,.3); }
+
+    /* ─── ANIM ─── */
+    .fu { animation: up .48s ease forwards; opacity: 0; }
+    .fu1{animation-delay:.05s} .fu2{animation-delay:.1s} .fu3{animation-delay:.15s} .fu4{animation-delay:.22s}
+
+    /* ─── SR ONLY ─── */
+    .sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+    @media(max-width:680px){
+      .featured{grid-template-columns:1fr}
+      .feat-info{border-left:none;border-top:1px solid var(--border)}
+      nav a:not(.keep){display:none}
+    }
+  </style>
+</head>
+<body>
+<div id="cur"></div>
+<div id="ring"></div>
+<span class="sr" id="seo-h" aria-live="polite"></span>
+
+<div class="stripe" role="presentation"></div>
+
+<header>
+  <a class="logo" onclick="showList()" aria-label="CutLab home">
+    <span class="logo-cut">CUT</span><span class="logo-lab">LAB</span>
+  </a>
+  <nav aria-label="Main navigation">
+    <a onclick="showList()" class="active keep" id="nb">Blog<span class="badge">NEW</span></a>
+    <a href="#">Tutorials</a>
+    <a href="#">Tools</a>
+    <a href="#">About</a>
+  </nav>
+</header>
+
+<!-- ═══ LIST PAGE ═══ -->
+<div id="page-list" role="main">
+
+  <section class="hero" aria-label="Blog hero">
+    <div class="eyebrow"><span class="dot"></span>TikTok Video Editing — Expert Tutorials</div>
+    <h1 class="hero-h1">EDIT LIKE<br><span class="red-line" data-t="TIKTOK">TIKTOK</span></h1>
+    <p class="hero-sub">81 battle-tested techniques, tutorials, and deep-dives for TikTok video editors — from raw footage to viral cut.</p>
+    <div class="stats" aria-label="Blog statistics">
+      <div><div class="stat-n">81<span>+</span></div><div class="stat-l">Articles</div></div>
+      <div><div class="stat-n">12<span>K</span></div><div class="stat-l">Monthly Readers</div></div>
+      <div><div class="stat-n">4<span>×</span></div><div class="stat-l">Expert Authors</div></div>
+    </div>
+  </section>
+
+  <div class="blog-sec">
+
+    <div class="sec-head" aria-hidden="true"><span class="sec-tag">Featured</span><div class="sec-line"></div></div>
+
+    <article class="featured fu fu1" onclick="showArticle(0)"
+      itemscope itemtype="https://schema.org/BlogPosting"
+      aria-label="Featured: The Grammar of Cuts">
+      <div class="feat-thumb">
+        <div class="feat-inner" style="background:linear-gradient(135deg,#050505,#120000)">🎬</div>
+      </div>
+      <div class="feat-info">
+        <div>
+          <div class="pcat r" itemprop="articleSection">Fundamentals</div>
+          <h2 class="feat-title" itemprop="headline">The Grammar of Cuts: How Every Edit Tells a Story</h2>
+          <p class="feat-ex" itemprop="description">J-cuts, L-cuts, match cuts — each carries emotional weight that shapes how TikTok audiences experience time and space. The foundational theory every short-form editor must internalize.</p>
+        </div>
+        <div>
+          <div class="feat-meta">
+            <span itemprop="datePublished" content="2025-06-12">Jun 12, 2025</span>
+            <span>14 min read</span>
+            <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Maya Okafor</span></span>
+          </div>
+          <div class="cta">Read Article <span class="arr">→</span></div>
+        </div>
+      </div>
+    </article>
+
+    <div style="margin-top:3.5rem">
+      <div class="sec-head" aria-hidden="true"><span class="sec-tag">All 81 Articles</span><div class="sec-line"></div></div>
+      <div class="grid" id="grid" role="list" aria-label="Video editing blog posts"></div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="f-logo">CUT<span>LAB</span></div>
+    <div class="f-tags" aria-label="Topic tags">
+      <span class="ftag">#TikTokEditing</span>
+      <span class="ftag">#VideoEditor</span>
+      <span class="ftag">#ColorGrading</span>
+      <span class="ftag">#CapCut</span>
+      <span class="ftag">#Transitions</span>
+      <span class="ftag">#ShortFormVideo</span>
+      <span class="ftag">#DarkLine81</span>
+    </div>
+    <p>© 2025 CutLab · All rights reserved</p>
+  </footer>
+</div>
+
+<!-- ═══ ARTICLE PAGE ═══ -->
+<div id="page-article" role="main" aria-live="polite">
+  <div class="art-wrap">
+    <div class="art-top">
+      <button class="back" onclick="showList()" aria-label="Back to blog">← Back to Blog</button>
+      <div class="art-cat" id="ac"></div>
+      <h1 class="art-h1" id="at"></h1>
+      <div class="art-meta" id="am"></div>
+    </div>
+    <div class="art-body" id="ab" itemprop="articleBody"></div>
+  </div>
+  <footer>
+    <div class="f-logo">CUT<span>LAB</span></div>
+    <p><button style="background:none;border:none;cursor:pointer;color:var(--tk-red);font-family:'Space Mono',monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;" onclick="showList()">← All Articles</button></p>
+    <p>© 2025 CutLab</p>
+  </footer>
+</div>
+
+<script>
+const posts=[
+  {id:0,cat:"Fundamentals",cc:"r",emoji:"🎬",bg:"linear-gradient(135deg,#050505,#120000)",
+   title:"The Grammar of Cuts: How Every Edit Tells a Story",
+   desc:"J-cuts, L-cuts, match cuts — the foundational theory every TikTok editor must master.",
+   date:"Jun 12 2025",read:"14 min",author:"Maya Okafor",pt:"Theory",pc:"r",
+   body:`<div class="art-thumb" style="background:linear-gradient(135deg,#050505,#120000)">🎬</div>
+   <p>Editing is the invisible art. For TikTok, where attention spans are measured in milliseconds, mastering the grammar of cuts is not optional — it's survival.</p>
+   <h2>The Four Essential Cut Types</h2>
+   <ul><li><strong>Hard Cut</strong> — Instantaneous. The TikTok default. Every viral edit lives or dies on hard cut timing.</li>
+   <li><strong>J-Cut</strong> — Audio from the next scene bleeds in before the image cuts. Creates seamless scene flow.</li>
+   <li><strong>L-Cut</strong> — Image cuts but previous audio continues. Builds emotional continuity.</li>
+   <li><strong>Match Cut</strong> — Two visually rhyming frames cut together. Used in cinematic TikTok transitions.</li></ul>
+   <div class="callout">💡 On TikTok, the first 0.3 seconds determine if the viewer swipes. Your opening cut IS your hook. Make it count.</div>
+   <h2>Pacing and Rhythm for TikTok</h2>
+   <p>TikTok editing is rhythmic editing. Every cut should hit a beat — the music beat, a sound effect, or a spoken word. Editors who cut to audio waveforms consistently outperform those who cut by instinct alone.</p>
+   <h2>Jump Cuts: TikTok's Native Language</h2>
+   <p>The <code>jump cut</code> is TikTok's signature. Cutting on the same angle to remove dead space creates pace and urgency the algorithm rewards. Use it to tighten talking-head content by removing every pause over 0.3 seconds.</p>`},
+  {id:1,cat:"Color Grading",cc:"c",emoji:"🎨",bg:"linear-gradient(135deg,#080005,#140005)",
+   title:"Color Theory for TikTok: Building a Viral Look from Scratch",
+   desc:"Develop a cohesive TikTok color palette using complementary hues, LUTs, and saturation control.",
+   date:"May 28 2025",read:"11 min",author:"Devon Price",pt:"Color",pc:"r",
+   body:`<div class="art-thumb" style="background:linear-gradient(135deg,#080005,#140005)">🎨</div>
+   <p>Color grading is the signature of your TikTok brand. The most-followed creators have an immediately recognizable look. This is how you build yours.</p>
+   <h2>The Three-Stage Pipeline</h2>
+   <ul><li><strong>Correction</strong> — Fix exposure, white balance, normalize across clips.</li>
+   <li><strong>Look Development</strong> — Apply your creative grade: lift shadows, shape highlights, pull color vectors.</li>
+   <li><strong>Refinement</strong> — Selective masks, noise matching, TikTok compression preview.</li></ul>
+   <div class="callout">🎨 TikTok's compression crushes shadows. Always preview your grade at TikTok's target bitrate before publishing — what looks perfect in DaVinci may block up completely in-app.</div>
+   <h2>LUT Workflow for TikTok</h2>
+   <p>Stack: <code>Technical LUT → Creative LUT → Manual grade</code>. Reduce creative LUT opacity to 40–70% and layer corrections on top. This keeps your look adaptable to different lighting conditions across your content library.</p>`},
+  {id:2,cat:"Audio",cc:"c",emoji:"🎧",bg:"linear-gradient(135deg,#000a0a,#001515)",
+   title:"TikTok Sound Design: Making Your Edits Hit Harder",
+   desc:"Trending audio, sound effects, music sync, and silence — how TikTok creators weaponize audio.",
+   date:"May 10 2025",read:"9 min",author:"Sana Ito",pt:"Audio",pc:"c",
+   body:`<div class="art-thumb" style="background:linear-gradient(135deg,#000a0a,#001515)">🎧</div>
+   <p>TikTok is fundamentally an audio platform. 93% of top-performing TikToks use original or trending audio. Sound design isn't optional — it IS the content strategy.</p>
+   <h2>The TikTok Sound Stack</h2>
+   <ul><li><strong>Trending Audio</strong> — Priority one. The algorithm surfaces content on trending sounds weekly.</li>
+   <li><strong>SFX Punctuation</strong> — Whoosh, hit, riser, boom. Every cut reinforced by sound compounds engagement.</li>
+   <li><strong>Voiceover</strong> — Clear, close-mic'd, compressed. Never raw.</li>
+   <li><strong>Silence</strong> — One beat before an impact creates anticipation that makes the hit land harder.</li></ul>
+   <div class="callout">🎵 The most viral TikTok sounds are 15–30 seconds. Edit your content to fit the full sound — the algorithm rewards using the complete audio clip.</div>`},
+  {id:3,cat:"Software",cc:"r",emoji:"⚡",bg:"linear-gradient(135deg,#0a0a00,#141400)",
+   title:"CapCut vs Premiere Pro vs DaVinci for TikTok",
+   desc:"Which editor fits your TikTok workflow? Mobile, desktop, and professional pipelines compared.",
+   date:"Apr 22 2025",read:"13 min",author:"James Ruiz",pt:"Tools",pc:"g",
+   body:`<div class="art-thumb" style="background:linear-gradient(135deg,#0a0a00,#141400)">⚡</div>
+   <p>Three editors dominate TikTok pipelines. Choosing wrong costs you hours per video. Here's the honest breakdown for 2025.</p>
+   <h2>CapCut — The TikTok Native</h2>
+   <ul><li>Built-in TikTok trend templates and effects</li>
+   <li>One-tap auto-captions optimized for TikTok</li>
+   <li>AI beat sync and auto-cut features</li>
+   <li>Best for: Mobile-first creators, fast turnaround, trend-chasing</li></ul>
+   <h2>Premiere Pro — The Professional's Daily Driver</h2>
+   <ul><li>Deep Adobe ecosystem integration</li>
+   <li>Best timeline feel for complex multi-track edits</li>
+   <li>Best for: Creators shooting with DSLRs or cinema cameras</li></ul>
+   <h2>DaVinci Resolve — The Quality Ceiling</h2>
+   <ul><li>Best-in-class color grading tools</li>
+   <li>Free version is genuinely professional-grade</li>
+   <li>Best for: Cinematic TikTok, brand content, quality-first creators</li></ul>
+   <div class="callout">⚡ The hybrid: edit in CapCut for speed, round-trip to DaVinci for color. Used by many top-1% TikTok creators on commercial projects.</div>`},
+  {id:4,cat:"Transitions",cc:"r",emoji:"🌊",bg:"linear-gradient(135deg,#00080a,#001018)",
+   title:"30 TikTok Transitions That Actually Go Viral",
+   desc:"Whip pans, zoom pulls, body blocks, outfit changes — the transitions powering 100M+ view videos.",
+   date:"Apr 5 2025",read:"10 min",author:"Maya Okafor",pt:"Transitions",pc:"r",
+   body:`<div class="art-thumb" style="background:linear-gradient(135deg,#00080a,#001018)">🌊</div>
+   <p>Transitions on TikTok aren't decoration — they ARE the content. The transition reveal, the outfit change, the seamless teleport — these are the moments viewers rewatch and share.</p>
+   <h2>The Viral Transition Toolkit</h2>
+   <ul><li><strong>Whip Pan Match</strong> — Camera swings same direction across two locations.</li>
+   <li><strong>Body Block</strong> — Subject walks past camera, fills frame, cut to new scene.</li>
+   <li><strong>Zoom Pull</strong> — Fast zoom in at end of clip, zoom out at start of next. Portal effect.</li>
+   <li><strong>Hand Swipe</strong> — Hand crosses screen; next clip enters from same direction.</li>
+   <li><strong>Blink Cut</strong> — Cut on a blink. Seamless location change.</li>
+   <li><strong>Outfit Change</strong> — Throw something at camera + cut frame. Still works in 2025.</li></ul>
+   <div class="callout">🌊 For transitions to work, audio must transition smoothly too. A jarring audio cut under a visual transition always breaks the illusion — sync your SFX to the exact cut frame.</div>`},
+  {id:5,cat:"Export",cc:"c",emoji:"📦",bg:"linear-gradient(135deg,#000a05,#001a0a)",
+   title:"Perfect TikTok Export Settings (2025 Guide)",
+   desc:"Exact codec, resolution, bitrate, and frame rate settings for maximum TikTok video quality.",
+   date:"Mar 18 2025",read:"8 min",author:"Devon Price",pt:"Technical",pc:"g",
+   body:`<div class="art-thumb" style="background:linear-gradient(135deg,#000a05,#001a0a)">📦</div>
+   <p>Wrong export settings kill quality before TikTok's compression even touches your video. Use these exact settings and you've done everything in your control.</p>
+   <h2>TikTok Optimal Export 2025</h2>
+   <ul><li>Resolution: <code>1080×1920</code> (9:16 vertical — always)</li>
+   <li>Codec: <code>H.264</code>, High Profile, Level 4.2</li>
+   <li>Bitrate: <code>8–12 Mbps</code></li>
+   <li>Frame rate: <code>30fps</code></li>
+   <li>Audio: <code>AAC 320kbps stereo</code></li>
+   <li>Color: <code>BT.709 Limited range</code></li></ul>
+   <div class="callout">📦 Always export a master ProRes or DNxHR first, then transcode to H.264 for TikTok. Never re-export from a compressed file — each generation loses quality permanently.</div>`},
+  {id:6,cat:"Storytelling",cc:"r",emoji:"🎞️",bg:"linear-gradient(135deg,#0a0000,#1a0500)",
+   title:"TikTok Storytelling: Hook, Story, Payoff in 60 Seconds",
+   desc:"The exact narrative structure behind every viral story-format TikTok. Map your content to this framework.",
+   date:"Mar 2 2025",read:"12 min",author:"Sana Ito",pt:"Story",pc:"r",
+   body:`<div class="art-thumb" style="background:linear-gradient(135deg,#0a0000,#1a0500)">🎞️</div>
+   <p>Every viral TikTok follows the same invisible structure. It's not luck — it's architecture. Here's the framework deconstructed.</p>
+   <h2>The Three-Beat TikTok Structure</h2>
+   <ul><li><strong>Hook (0–3s)</strong> — A question, a conflict, a surprising visual, or a bold claim. No hook = swipe.</li>
+   <li><strong>Story (3s–end-10s)</strong> — Deliver your value, escalate, keep building. Every sentence should make the viewer want the next one.</li>
+   <li><strong>Payoff</strong> — Resolve the tension from your hook. The payoff IS the shareable moment.</li></ul>
+   <div class="callout">🎞️ The open loop technique: state a question in your hook that can only be answered by watching to the end. This single technique drives most 100%+ average watch time scores.</div>
+   <h2>Edit to the Structure</h2>
+   <p>Once you know your three beats, editing decisions become clear. The hook needs your fastest cuts. The story needs rhythm. The payoff needs space — slow down, let it breathe, make the viewer feel the resolution.</p>`},
+  {id:7,cat:"Hardware",cc:"c",emoji:"🖥️",bg:"linear-gradient(135deg,#050508,#08080f)",
+   title:"Best Devices for TikTok Video Editing in 2025",
+   desc:"M4 MacBook, PCs, iPads, and phones — ranked for TikTok editing workflows.",
+   date:"Feb 14 2025",read:"11 min",author:"James Ruiz",pt:"Hardware",pc:"g",
+   body:`<div class="art-thumb" style="background:linear-gradient(135deg,#050508,#08080f)">🖥️</div>
+   <p>For TikTok specifically, your hardware choices differ from traditional video work. Vertical 1080p is far less demanding than 4K cinematic. Here's what actually matters in 2025.</p>
+   <h2>The Best Options in 2025</h2>
+   <ul><li><strong>M4 MacBook Air/Pro</strong> — Best value for serious TikTok creators. Silent, efficient, excellent across all major NLEs.</li>
+   <li><strong>iPhone 16 Pro</strong> — Best mobile editing device. CapCut mobile + ProRes shooting = complete pocket pipeline.</li>
+   <li><strong>iPad Pro M4</strong> — Underrated for on-the-go creators using CapCut or LumaFusion.</li>
+   <li><strong>Windows PC (AMD Ryzen 7 7700X)</strong> — Best value desktop for DaVinci Resolve color work.</li></ul>
+   <div class="callout">🖥️ For TikTok editing, RAM matters more than GPU. 16GB minimum; 32GB is the sweet spot. TikTok content rarely needs the GPU-accelerated rendering that 4K cinematic work demands.</div>`},
+  {id:8,cat:"Motion Graphics",cc:"r",emoji:"✨",bg:"linear-gradient(135deg,#05000a,#0a0015)",
+   title:"After Effects for TikTok: Expressions That Actually Matter",
+   desc:"10 After Effects expressions that automate TikTok motion graphics and save hours per video.",
+   date:"Jan 30 2025",read:"10 min",author:"Maya Okafor",pt:"Motion",pc:"r",
+   body:`<div class="art-thumb" style="background:linear-gradient(135deg,#05000a,#0a0015)">✨</div>
+   <p>TikTok motion graphics are fast, punchy, and repeatable. Expressions let you build templates once and reuse them across hundreds of videos.</p>
+   <h2>The TikTok Expressions Toolkit</h2>
+   <ul><li><code>wiggle(freq, amp)</code> — Random jitter for handheld energy.</li>
+   <li><code>loopOut("cycle")</code> — Loops animations infinitely for background elements.</li>
+   <li><code>time * 360</code> — Endless rotation for icons and loading indicators.</li>
+   <li><code>posterizeTime(12)</code> — Choppy lo-fi frame rate. Viral aesthetic.</li>
+   <li><code>Math.sin(time * freq) * amp</code> — Smooth oscillation for text bounce.</li>
+   <li><code>valueAtTime(time - 0.1)</code> — Trail/echo effect on any property.</li></ul>
+   <div class="callout">✨ Build a "TikTok Toolkit" AE template with pre-wired text boxes and caption styles. A reusable template cuts your per-video motion graphics time from 45 minutes to 5.</div>`},
+  {id:9,cat:"AI Tools",cc:"c",emoji:"🤖",bg:"linear-gradient(135deg,#000a08,#001a14)",
+   title:"AI Video Editing for TikTok: What Works in 2025",
+   desc:"Auto-cut, AI captions, background removal, music generation — separating hype from real workflow.",
+   date:"Jan 12 2025",read:"11 min",author:"Devon Price",pt:"AI",pc:"c",
+   body:`<div class="art-thumb" style="background:linear-gradient(135deg,#000a08,#001a14)">🤖</div>
+   <p>AI tools in TikTok video editing are past the hype phase. Real features, real time savings, real limitations. Here's the honest 2025 assessment.</p>
+   <h2>What Genuinely Works</h2>
+   <ul><li><strong>AI Auto-Captions (CapCut)</strong> — Excellent accuracy. Saves hours. Non-negotiable for TikTok accessibility.</li>
+   <li><strong>AI Background Removal</strong> — 85% accurate, usable with cleanup passes. Perfect for talking-head content.</li>
+   <li><strong>AI Beat Sync (CapCut)</strong> — Cuts video to audio beats automatically. Better than most manual first passes.</li>
+   <li><strong>AI Noise Reduction (DaVinci)</strong> — Dramatically better than non-AI NR. Essential for phone audio.</li></ul>
+   <h2>What's Still Overhyped</h2>
+   <ul><li><strong>Full Auto-Edit AI</strong> — Can't replace editorial judgment. They find cuts; they can't build hooks.</li>
+   <li><strong>AI Generated B-roll</strong> — Quality inconsistency makes it unusable for professional creators in 2025.</li></ul>
+   <div class="callout">🤖 The winning formula: AI handles captions, noise removal, and rough cut. You handle the hook, the pacing, and the payoff. Neither replaces the other.</div>`},
+  {id:10,cat:"On Camera",cc:"r",emoji:"🎭",bg:"linear-gradient(135deg,#0a0005,#140010)",
+   title:"Editing Yourself: How to Cut Talking-Head TikToks",
+   desc:"Jump cuts, pacing, filler word removal, and the psychology of self-presenting on camera.",
+   date:"Dec 22 2024",read:"9 min",author:"Sana Ito",pt:"On Camera",pc:"r",
+   body:`<div class="art-thumb" style="background:linear-gradient(135deg,#0a0005,#140010)">🎭</div>
+   <p>The talking-head TikTok is the hardest format to get right and the easiest to get wrong. Most creators leave 40% of their engagement on the table through poor self-editing.</p>
+   <h2>The Jump Cut Protocol</h2>
+   <ul><li>Remove every pause over 0.3 seconds</li>
+   <li>Cut every "um", "uh", "like", and "you know"</li>
+   <li>Keep sentences that start strong; cut weak openers</li>
+   <li>Never cut mid-breath — always after a natural breath</li></ul>
+   <div class="callout">🎭 The best talking-head TikToks feel conversational but are surgically edited. If you can hear the cuts, they're wrong.</div>
+   <h2>Eyes and Energy</h2>
+   <p>Watch every take with the sound off. If your eyes are alive and your energy reads in silent playback, that's your take. Authentic presence can't be manufactured in post.</p>`},
+  {id:11,cat:"Growth",cc:"c",emoji:"📈",bg:"linear-gradient(135deg,#000508,#000a14)",
+   title:"How Your Editing Style Affects the TikTok Algorithm",
+   desc:"Completion rate, rewatch rate, shares — how editing decisions directly drive TikTok algorithm signals.",
+   date:"Dec 5 2024",read:"10 min",author:"James Ruiz",pt:"Algorithm",pc:"c",
+   body:`<div class="art-thumb" style="background:linear-gradient(135deg,#000508,#000a14)">📈</div>
+   <p>TikTok's algorithm reads your edit as much as your content. Completion rate, rewatch rate, and shares are directly influenced by specific editing decisions.</p>
+   <h2>Algorithm Signals and How Editing Affects Them</h2>
+   <ul><li><strong>Completion Rate</strong> — Tight edits with open loops = viewers finish. Target 70%+ completion.</li>
+   <li><strong>Rewatch Rate</strong> — A payoff that recontextualizes the beginning drives rewatch. Edit for the second viewing.</li>
+   <li><strong>Share Rate</strong> — Place your most shareable moment at 40–60% of runtime.</li>
+   <li><strong>Comment Rate</strong> — An unresolved ending prompts comments. Edit to leave a question hanging.</li></ul>
+   <div class="callout">📈 The single highest-impact editing change for algorithm performance: cut your video's duration by 20–30%. The constraint forces you to keep only what's essential — and the algorithm rewards it every time.</div>`}
+];
+
+function renderGrid(){
+  const g=document.getElementById('grid');
+  g.innerHTML='';
+  posts.forEach((p,i)=>{
+    const el=document.createElement('article');
+    el.className='card fu';
+    el.style.animationDelay=`${i*.032}s`;
+    el.style.opacity='0';
+    el.setAttribute('role','listitem');
+    el.setAttribute('itemscope','');
+    el.setAttribute('itemtype','https://schema.org/BlogPosting');
+    el.innerHTML=`
+      <div class="c-top">
+        <span class="c-num">${String(i+1).padStart(2,'0')}</span>
+        <span class="c-emoji" aria-hidden="true">${p.emoji}</span>
+      </div>
+      <h2 class="c-title" itemprop="headline">${p.title}</h2>
+      <p class="c-desc" itemprop="description">${p.desc}</p>
+      <div class="c-foot">
+        <span class="pill ${p.pc}" itemprop="keywords">${p.pt}</span>
+        <span class="c-arr" aria-hidden="true">→</span>
+      </div>
+      <meta itemprop="datePublished" content="${p.date}"/>
+      <meta itemprop="author" content="${p.author}"/>`;
+    el.onclick=()=>showArticle(p.id);
+    g.appendChild(el);
+  });
+}
+
+function showList(){
+  document.getElementById('page-list').style.display='block';
+  document.getElementById('page-article').style.display='none';
+  document.title='TikTok Video Editing Tips & Tutorials | CutLab Blog';
+  document.querySelector('meta[name="description"]').content='Master TikTok video editing with expert tutorials on cuts, color grading, transitions, audio sync, and trending effects.';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function showArticle(id){
+  const p=posts.find(x=>x.id===id);
+  if(!p)return;
+  document.title=`${p.title} | CutLab — TikTok Video Editing`;
+  document.querySelector('meta[name="description"]').content=p.desc;
+  document.getElementById('seo-h').textContent=p.title;
+  document.getElementById('ac').textContent=p.cat;
+  document.getElementById('at').textContent=p.title;
+  document.getElementById('am').innerHTML=`<span>${p.date}</span><span>${p.read} read</span><span>by ${p.author}</span>`;
+  document.getElementById('ab').innerHTML=p.body;
+  document.getElementById('page-list').style.display='none';
+  document.getElementById('page-article').style.display='block';
+  window.scrollTo({top:0,behavior:'instant'});
+}
+
+/* cursor */
+const cur=document.getElementById('cur'),ring=document.getElementById('ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{
+  mx=e.clientX;my=e.clientY;
+  cur.style.left=mx+'px';cur.style.top=my+'px';
+});
+(function raf(){
+  rx+=(mx-rx)*.11;ry+=(my-ry)*.11;
+  ring.style.left=rx+'px';ring.style.top=ry+'px';
+  requestAnimationFrame(raf);
+})();
+document.querySelectorAll('a,button,.card,.featured').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cur.style.transform='translate(-50%,-50%) scale(2.5)';cur.style.background='var(--tk-cyan)';ring.style.opacity='.25';});
+  el.addEventListener('mouseleave',()=>{cur.style.transform='translate(-50%,-50%) scale(1)';cur.style.background='var(--tk-red)';ring.style.opacity='1';});
+});
+
+renderGrid();
+</script>
+</body>
+</html>
